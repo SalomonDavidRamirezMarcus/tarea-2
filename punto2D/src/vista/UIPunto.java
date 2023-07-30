@@ -31,16 +31,13 @@ public class UIPunto extends javax.swing.JFrame {
                 double x = e.getX();
                 double y = e.getY();
                 puntoClic = new Punto2D(x, y);
+                JOptionPane.showMessageDialog(UIPunto.this,
+                        "Punto clic: " + puntoClic.toString(),
+                        "Punto Clic",
+                        JOptionPane.INFORMATION_MESSAGE);
             }
         });
     }
-    
-    
-    
-    
-    
-    
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -66,13 +63,12 @@ public class UIPunto extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        
+
         SwingUtilities.invokeLater(() -> {
             UIPunto puntoApp = new UIPunto();
             puntoApp.setVisible(true);
         });
-        
- 
+
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
