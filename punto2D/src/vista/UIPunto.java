@@ -27,10 +27,12 @@ public class UIPunto extends javax.swing.JFrame {
 
         addMouseListener(new MouseAdapter() {
             @Override
+            
             public void mouseClicked(MouseEvent e) {
                 double x = e.getX();
                 double y = e.getY();
                 puntoClic = new Punto2D(x, y);
+                
                 JOptionPane.showMessageDialog(UIPunto.this,
                         "Punto clic: " + puntoClic.toString(),
                         "Punto Clic",
